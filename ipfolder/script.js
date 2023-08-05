@@ -50,8 +50,15 @@ getUserLocationInfo();
        let pincode = document.getElementById('pincode');
        let massage = document.getElementById('massage');
 
+       function updateTime() {
+        let chicago_datetime_str = new Date().toLocaleString("en-US", { timeZone: data.timeZone });
+        datetime.innerText = `${chicago_datetime_str}`;
+      }
+    
+      // Call the updateTime function initially to display the current time
+      setInterval(updateTime, 1000);
        timezone.innerText = `${data.timezone}`;
-       datetime.innerText = ` ${chicago_datetime_str}`;
+       
        pincode.innerText = `${data.postal}`;
 
     }
