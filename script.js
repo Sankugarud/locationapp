@@ -23,6 +23,6 @@
 
         let getstart = document.getElementById('getstart');
         getstart.addEventListener('click', async () => {
-            await apicall(); // Wait for the API call to complete
-            window.location.href = "./ipfolder/index.html"; // Redirect after the data is fetched and stored
+            await apicall(); 
+            window.location.href = "./ipfolder/index.html";
         });
