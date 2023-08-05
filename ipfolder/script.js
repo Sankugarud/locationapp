@@ -56,7 +56,7 @@ getUserLocationInfo();
 
     }
     let postOfficesData = [];
-    const pinapi = `https://api.postalpincode.in/pincode/${400078}`;
+    const pinapi = `https://api.postalpincode.in/pincode/${data.postal}`;
       async function fetchPostOfficesByPincode(){
         try {
           let responce = await fetch(pinapi);
