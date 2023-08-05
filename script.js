@@ -3,7 +3,7 @@
         let api = `https://ipinfo.io/${ip}?token=8578d50ab152e3`;
 
         let liveip = document.getElementById('liveip');
-        $.getJSON("http://jsonip.com", function (data) {
+        $.getJSON("https://jsonip.com", function (data) {
             ip = data.ip;
             liveip.innerText =data.ip;
         });
