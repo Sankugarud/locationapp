@@ -98,18 +98,18 @@ getUserLocationInfo();
         div.className = 'card';
     
         div.innerHTML = `
-          <p>Name: ${Name}</p>
-          <p>Branch Type: ${BranchType}</p>
-          <p>Delivery Status: ${DeliveryStatus}</p>
-          <p>District: ${District}</p>
-          <p>Division: ${Division}</p>
+          <p>Name:<span class="add"> ${Name}</span></p>
+          <p>Branch Type:<span class="add"> ${BranchType}</span></p>
+          <p>Delivery Status:<span class="add"> ${DeliveryStatus}</span></p>
+          <p>District: <span class="add">${District}</span></p>
+          <p>Division: <span class="add">${Division}</span></p>
         `;
     
         postOfficesContainer.appendChild(div);
       });
     }
     
-    // ... Your existing code ...
+
     
     // Event listener for the search box
     document.getElementById('search').addEventListener('input', function(event) {
